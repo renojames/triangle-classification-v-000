@@ -25,10 +25,10 @@ class Triangle
   end
 
   def kind
-    if !type && !triangle?
-      raise TriangleError
-    else
+    if type && triangle?
       type
+    else
+      raise TriangleError
     end
   end
 
